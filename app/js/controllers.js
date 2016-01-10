@@ -4,9 +4,9 @@
 
 var phonecatControllers = angular.module('phonecatControllers', []);
 
-phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Softwares',
-  function($scope, Softwares) {
-    $scope.softwares = Softwares.query();
+phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Software',
+  function($scope, Software) {
+    $scope.softwares = Software.query();
     $scope.orderProp = 'age';
   }]);
 
